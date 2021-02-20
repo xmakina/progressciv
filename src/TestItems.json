@@ -1,0 +1,80 @@
+{
+    "items": [
+        {
+            "product": "wheat",
+            "quantity": 2,
+            "time": 5000,
+            "startingActive": 1,
+            "upgrades": [
+                {
+                    "aspect": "production",
+                    "operation": "+",
+                    "amount": 1,
+                    "demands": {
+                        "wheat farm": 1
+                    }
+                },
+                {
+                    "aspect": "time",
+                    "operation": "*",
+                    "amount": 0.50,
+                    "demands": {
+                        "worker": 1
+                    }
+                }
+            ]
+        },
+        {
+            "product": "wood",
+            "quantity": 1,
+            "time": 5000,
+            "startingActive": 1,
+            "upgrades": [
+                {
+                    "aspect": "production",
+                    "operation": "+",
+                    "amount": 1,
+                    "demands": {
+                        "forest": 1
+                    }
+                },
+                {
+                    "aspect": "time",
+                    "operation": "*",
+                    "amount": 0.95,
+                    "demands": {
+                        "worker": 1
+                    }
+                }
+            ]
+        },
+        {
+            "product": "worker",
+            "quantity": 1,
+            "time": 3000,
+            "startingActive": 1,
+            "demands": {
+                "wheat": 10
+            }
+        },
+        {
+            "product": "wheat farm",
+            "quantity": 1,
+            "time": 10000,
+            "startingActive": 1,
+            "demands": {
+                "wood": 5,
+                "wheat": 2
+            }
+        },
+        {
+            "product": "forest",
+            "quantity": 1,
+            "time": 10000,
+            "startingActive": 1,
+            "demands": {
+                "wood": 10
+            }
+        }
+    ]
+}

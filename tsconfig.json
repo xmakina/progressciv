@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "outDir": "dist",
+        "declaration": true,
+        "target": "ES5",
+        "resolveJsonModule": true
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+}
