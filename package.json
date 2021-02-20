@@ -1,9 +1,13 @@
 {
   "name": "progressciv",
   "version": "0.0.1",
-  "description": "",
+  "description": "An Idle Civilization Management Game",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "typings": "dist/index",
+  "files": [
+    "dist"
+  ],
   "directories": {
     "lib": "lib"
   },
@@ -11,11 +15,11 @@
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepare": "tsc"
+    "prepare": "npm run build && npm test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["game"],
+  "author": "Alex Addams <github@xmakina.co.uk>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
